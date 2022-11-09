@@ -11,7 +11,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .legenda{
@@ -77,6 +77,7 @@ input{
     src: url(./get_schwifty.ttf);
 }
 .titulo{
+    margin-top: -25px;
     font-family: get schwifty;
     font-size: xx-large;
     text-align: center;
