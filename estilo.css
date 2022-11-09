@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #fc4fae, #6C4CD8);
+}
+.conteudo{
+    height: 500px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 80px;
+}
+
+.legenda{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: 2px solid #04B6FE;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+.bar:hover{
+    background-color: #04B6FE;
+}
+
+input{
+    display: none;
+}
+
+.carrossel{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.image{
+    width: 20%;
+    transition: .5s;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#foto1:checked ~ .f1{
+    margin-right: 0;
+}
+#foto2:checked ~ .f1{
+    margin-right: -20%;
+}
+#foto3:checked ~ .f1{
+    margin-right: -40%;
+}
+#foto4:checked ~ .f1{
+    margin-right: -60%;
+}
+#foto5:checked ~ .f1{
+    margin-right: -80%;
+}
+
+@font-face {
+    font-family: get schwifty;
+    src: url(./get_schwifty.ttf);
+}
+.titulo{
+    font-family: get schwifty;
+    font-size: xx-large;
+    text-align: center;
+    color: #83d2e4;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000;
+}
